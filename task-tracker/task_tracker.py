@@ -1,6 +1,21 @@
 ﻿# Simple Task Tracker
 
+import json
+
 tasks = []
+FILE_NAME = "tasks.json"
+
+def load_tasks():
+    global tasks
+    try:
+        with open(FILE_NAME, "r") as f:
+            tasks = json.load(f)
+    except FileNotFoundError:
+        tasks = []
+
+def save_tasks():
+    with open(FILE_NAME, "w") as f:
+        json.dump(tasks, f, indent=2)
 
 def add_task(task_name):
     tasks.append({"name": task_name, "done": False})
