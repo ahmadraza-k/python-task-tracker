@@ -31,10 +31,20 @@ def mark_done(task_index):
     else:
         print("Invalid task number")
 
+def delete_task(task_index):
+    if 0 <= task_index < len(tasks):
+        removed = tasks.pop(task_index)
+        print(f"Task deleted: {removed['name']}")
+        save_tasks()
+    else:
+        print("Invalid task number")
+
 # Test it
 load_tasks()
 add_task("Learn Python")
 add_task("Learn Git")
 list_tasks()
 mark_done(0)
+list_tasks()
+delete_task(1)
 list_tasks()
