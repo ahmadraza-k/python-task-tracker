@@ -10,3 +10,4 @@ def add_task(task_name):
 add_task("Learn Python")
 add_task("Learn Git")
 print(tasks)
+
