@@ -4,7 +4,15 @@
     "done": true
   },
   {
-    "name": "Learn Git",
+    "name": "git",
+    "done": false
+  },
+  {
+    "name": "git",
+    "done": false
+  },
+  {
+    "name": "python",
     "done": false
   }
 ]
