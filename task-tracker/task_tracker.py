@@ -39,7 +39,7 @@ def mark_done(task_index):
         print(f"Task marked done: {tasks[task_index]['name']}")
         save_tasks()
     else:
-        print("Invalid task number")
+        print("Invalid task number(s)")
 
 def delete_task(task_index):
     if 0 <= task_index < len(tasks):
@@ -47,7 +47,7 @@ def delete_task(task_index):
         print(f"Task deleted: {removed['name']}")
         save_tasks()
     else:
-        print("Invalid task number")
+        print("Invalid task number(s)")
 
 def run_app():
     load_tasks()
