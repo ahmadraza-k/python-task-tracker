@@ -32,6 +32,7 @@ def mark_done(task_index):
         print("Invalid task number")
 
 # Test it
+load_tasks()
 add_task("Learn Python")
 add_task("Learn Git")
 list_tasks()
