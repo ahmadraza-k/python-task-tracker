@@ -83,7 +83,7 @@ def run_app():
             except ValueError:
                 print("Please enter a valid number")
         elif choice == "5":
-            print("Goodbye, thanks for using Task Tracker!")
+            print("Goodbye")
             break
         else:
             print("Invalid option, choose 1-5")
